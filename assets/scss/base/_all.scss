@@ -168,6 +168,9 @@ img {
 	--neutral-900: #212529;
 	--danger-300: #d74f4f;
 }
+.next300{
+  color: var(--neutral-300);
+}
 .primary-color {
   color: var(--primary-400);
 }
@@ -902,6 +905,13 @@ body {
 .icon-18px{
   font-size: 18px;
 }
+.md{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  color: var(--neutral-900);
+}
 
 /* RWD */
 @media screen and (max-width: 768px) {
@@ -1138,6 +1148,8 @@ body {
 a {
   display: inline-block;
   transition: transform 0.2s;
+  text-decoration: none;
+  color: var(--neutral-900)
 }
 a:hover {
   transform: scale(1.2); /* 視覺上變大，但不改變流體排版尺寸 */

@@ -833,7 +833,19 @@ body {
   background: var(--primary-400);
   color: var(--neutral-0);
 }
-
+.md-p{
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  color: var(--neutral-600);
+}
+.md-pice{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  color: var(--neutral-500);
+}
 .page-item .btn {
   border-radius: 0;
   padding: 8px 15px;
@@ -875,6 +887,14 @@ body {
 }
 .btn-product-size.active {
   border-color: var(--neutral-900);
+}
+.btn-product-size:disabled{
+  opacity: 1;                 // 保持按鈕整體不透明
+  border-color: #ccc;        // 邊框變淡
+  color: #999;               // 字變灰
+  background-color: transparent;  // 背景透明或你原本設定
+  cursor: not-allowed;
+  pointer-events: none;
 }
 
 .product-action {

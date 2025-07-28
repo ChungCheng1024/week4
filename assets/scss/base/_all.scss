@@ -142,7 +142,7 @@ table {
 img {
   max-width: 100%;
   height: auto;
-  display: block;
+  vertical-align: middle;
 }
 
 *,
@@ -712,6 +712,7 @@ body {
 .btn-dark {
   background-color: var(--neutral-900);
   color: var(--neutral-0);
+
 }
 
 .btn-light {
@@ -932,9 +933,18 @@ body {
   letter-spacing: 0.05em;
   color: var(--neutral-900);
 }
-
+.quote{
+  border-radius: 12px;
+  text-align: center;
+}
 /* RWD */
-@media screen and (max-width: 768px) {
+@media (max-width:767px){
+  .quote {
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 767px) {
   .login-intro-md {
     width: 100%;
     height: 35vh;
@@ -947,7 +957,7 @@ body {
     background-image: none;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .h3-md {
     font-size: 28px;
   }
@@ -967,7 +977,7 @@ body {
     text-align: left;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .row {
     margin-left: -6px;
     margin-right: -6px;
@@ -1003,6 +1013,9 @@ body {
   }
 }
 @media screen and (max-width: 576px) {
+  .me-sm-0 {
+    margin-inline-end: 0;
+  }
   .d-sm-none {
     display: none;
   }
@@ -1010,7 +1023,7 @@ body {
     display: block;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .p-md-6 {
     padding: 24px;
   }
@@ -1094,7 +1107,7 @@ body {
     margin-bottom: 24px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .breadcrumb-item-md + .breadcrumb-item-md::before {
     content: "/";
     padding: 0 8px;
@@ -1102,7 +1115,7 @@ body {
     font-weight: 700;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .brand-title {
     background-image: url("../img/hero-sm.png");
     padding: 87px 0;
@@ -1120,6 +1133,7 @@ body {
     display: flex;
     align-items: center;
   }
+  
   .product-action .btn {
     width: 85%;
   }
@@ -1135,6 +1149,9 @@ body {
   }
   .bi-heart-fill {
     font-size: 46px;
+  }
+  .btn{
+    padding: 8px 16px;
   }
 }
 

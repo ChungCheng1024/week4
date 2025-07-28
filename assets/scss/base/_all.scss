@@ -942,6 +942,9 @@ body {
   .quote {
     text-align: left;
   }
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -1006,6 +1009,9 @@ body {
     padding-left: 6px;
     padding-right: 6px;
     width: 50%;
+  }
+  .flex-md-col{
+    flex-direction: column;
   }
   .d-md-block {
     display: block;

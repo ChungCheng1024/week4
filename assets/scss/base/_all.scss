@@ -922,7 +922,9 @@ body {
 .bi-handbag {
   font-size: 18px;
 }
-
+.icon-box-48{
+  font-size: 28px;
+}
 .icon-18px{
   font-size: 18px;
 }
@@ -937,16 +939,7 @@ body {
   border-radius: 12px;
   text-align: center;
 }
-.icon-box-48 {
-  width: 48px;
-  height: 48px;
-  padding: 12px;
-  box-sizing: border-box;
-  font-size: 24px;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-}
+
 /* RWD */
 @media (max-width:767px){
   .quote {
@@ -954,6 +947,41 @@ body {
   }
   .flex-wrap {
     flex-wrap: wrap;
+  }
+  .md-title {
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+    color: var(--neutral-900);
+  }
+  .md-sm{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+    color: var(--danger-300);
+  }
+}
+/* 手機：只保留 icon，變成 48x48 的按鈕 */
+@media screen and (max-width: 767px) {
+  .icon-btn-sm-only {
+    width: 48px !important;
+    height: 48px !important;
+    padding: 0 !important;
+    justify-content: center !important;
+    align-items: center !important;
+   
+  }
+
+
+  .icon-btn-sm-only:hover .bi-heart-fill {
+    display: inline-block;  
+  }
+
+  .icon-btn-sm-only i {
+    font-size: 24px;
+    width: 24px;
+    height: 24px;
   }
 }
 
@@ -971,6 +999,7 @@ body {
   }
 }
 @media screen and (max-width: 767px) {
+  
   .h3-md {
     font-size: 28px;
   }
@@ -992,6 +1021,20 @@ body {
 }
 
 @media screen and (max-width: 767px) {
+  .no-wrap {
+    flex-wrap: nowrap;
+  }
+  .left-box {
+    order: 1;
+  }
+  .right-box {
+    order: 2;
+    border: none;
+    
+  }
+  .right-box .btn-text {
+    display: none;
+  }
   
   .row {
     margin-left: -6px;
@@ -1015,8 +1058,8 @@ body {
   }
   
   .col-md-4 {
-    padding-left: 6px;
-    padding-right: 6px;
+    padding-left: 0px;
+    padding-right: 0px;
     width: 100%;
     
   }
@@ -1154,6 +1197,11 @@ body {
   }
 }
 @media screen and (max-width: 767px) {
+  .img-100{
+    width: 100%;
+    padding: 0px;
+    margin: 0 auto;
+  }
   .brand-title {
     background-image: url("../img/hero-sm.png");
     padding: 87px 0;
@@ -1179,6 +1227,13 @@ body {
     all: unset;
     cursor: pointer;
   }
+  .icon-box-48{
+    width: 48px;
+    height: 48px;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+  }
   .like i {
     font-size: 46px;
   }
@@ -1200,7 +1255,6 @@ body {
 .collection-info {
   width: 100%;
 }
-
 .login-intro {
   background-image: url("../img/login.png");
   background-position: center;

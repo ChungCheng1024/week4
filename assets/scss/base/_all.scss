@@ -622,6 +622,10 @@ body {
   border-bottom: 1px solid var(--neutral-300);
 }
 
+.border-top {
+  border-top: 1px solid var(--neutral-300);
+}
+
 .border-radius-1 {
   border-radius: 4px;
 }
@@ -940,7 +944,7 @@ body {
   text-align: center;
 }
 
-/* RWD */
+/* RWD 響應式*/
 @media (max-width:767px){
   .quote {
     text-align: left;
@@ -955,18 +959,42 @@ body {
     color: var(--neutral-900);
   }
   .md-sm{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+    color: var(--neutral-600);
+  }
+  .md-sm-2{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+    color: var(--neutral-300);
+  }
+  .md-sm-danger{
     font-weight: 400;
     font-size: 14px;
     line-height: 1.5;
     letter-spacing: 0.05em;
     color: var(--danger-300);
   }
+  .md-sm-title{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+    color: var(--neutral-900);
+  }
+  .md-fz40{
+    font-size: 40px;
+  }
 }
 /* 手機：只保留 icon，變成 48x48 的按鈕 */
 @media screen and (max-width: 767px) {
   .icon-btn-sm-only {
-    width: 48px !important;
-    height: 48px !important;
+    width: 40px !important;
+    height: 40px !important;
     padding: 0 !important;
     justify-content: center !important;
     align-items: center !important;
@@ -1021,6 +1049,9 @@ body {
 }
 
 @media screen and (max-width: 767px) {
+  
+  
+  
   .no-wrap {
     flex-wrap: nowrap;
   }
@@ -1138,6 +1169,9 @@ body {
   .mr-md-4 {
     margin-right: 16px;
   }
+  .mb-md-0 {
+    margin-bottom: 0px;
+  }
   .mb-md-2 {
     margin-bottom: 8px;
   }
@@ -1197,6 +1231,13 @@ body {
   }
 }
 @media screen and (max-width: 767px) {
+  .icon-box-48{
+    width: 40px;
+    height: 40px;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+  }
   .img-100{
     width: 100%;
     padding: 0px;
@@ -1227,13 +1268,7 @@ body {
     all: unset;
     cursor: pointer;
   }
-  .icon-box-48{
-    width: 48px;
-    height: 48px;
-    padding: 12px;
-    justify-content: center;
-    align-items: center;
-  }
+ 
   .like i {
     font-size: 46px;
   }

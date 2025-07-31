@@ -1,0 +1,16 @@
+
+.brand-title {
+    background-image: url("../img/hero.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 152px 0;
+  }
+  .brand-title .eng-title {
+    font-size: 28px;
+  }
+  
+.brand-story a:hover {
+    background: var(--primary-400);
+    color: var(--neutral-0);
+  }

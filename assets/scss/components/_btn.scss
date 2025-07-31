@@ -1,0 +1,70 @@
+
+.btn {
+    border-radius: 4px;
+    padding: 12px 24px;
+    color: var(--neutral-900);
+    line-height: 1.5;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+  }
+  
+  .btn-green {
+    background-color: var(--primary-300);
+    min-height: 48px;
+  }
+  
+  .btn-dark {
+    background-color: var(--neutral-900);
+    color: var(--neutral-0);
+  
+  }
+  
+  .btn-light {
+    border: 1px solid var(--neutral-900);
+    color: var(--neutral-900);
+  }
+  .btn-light:hover {
+    background-color: var(--neutral-900);
+    color: var(--neutral-0);
+  }
+  
+  .btn-tab {
+    width: 100%;
+    font-weight: 400;
+    border: 1px solid var(--neutral-300);
+    background-color: var(--neutral-0);
+  }
+
+  .page-item .btn {
+    border-radius: 0;
+    padding: 8px 15px;
+    font-weight: 400;
+  }
+  .page-item .btn:hover {
+    background-color: var(--neutral-100);
+  }
+  .page-item .btn.active {
+    background-color: var(--primary-300);
+    font-weight: 500;
+  }
+  
+.btn-product-size {
+    border: 1px solid var(--neutral-300);
+    width: 160px;
+  }
+  .btn-product-size:hover {
+    border-color: var(--neutral-900);
+  }
+  .btn-product-size.active {
+    border-color: var(--neutral-900);
+  }
+  .btn-product-size:disabled{
+    opacity: 1;                 // 保持按鈕整體不透明
+    border-color: #ccc;        // 邊框變淡
+    color: #999;               // 字變灰
+    background-color: transparent;  // 背景透明或你原本設定
+    cursor: not-allowed;
+    pointer-events: none;
+  }

@@ -1,0 +1,153 @@
+
+.hot-goods {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 8px 12px;
+    color: var(--primary-400);
+    background-color: var(--primary-100);
+  }
+  
+  .swiper-pagination-bullet {
+    background-color: var(--neutral-300);
+    opacity: 1;
+  }
+  
+  .swiper-pagination-bullet-active {
+    background-color: var(--primary-400);
+  }
+  
+  .enroll-login-tab {
+    width: 50%;
+    text-decoration: none;
+    text-align: center;
+    padding: 12px 0;
+    border-bottom: 2px solid var(--neutral-900);
+  }
+  
+  .enroll-enroll-tab {
+    width: 50%;
+    text-decoration: none;
+    text-align: center;
+    padding: 12px 0;
+    border-bottom: 2px solid var(--neutral-300);
+  }
+  
+  .login-login-tab {
+    width: 50%;
+    text-decoration: none;
+    text-align: center;
+    padding: 12px 0;
+    border-bottom: 2px solid var(--neutral-300);
+  }
+  
+  .login-enroll-tab {
+    width: 50%;
+    text-decoration: none;
+    text-align: center;
+    padding: 12px 0;
+    border-bottom: 2px solid var(--neutral-900);
+  }
+  
+  
+  .ad {
+    margin-top: 48px;
+    margin-bottom: 48px;
+    background-image: url("../img/banner-co-branded.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  
+  
+  .section-line {
+    border-bottom: 1px solid var(--neutral-300);
+  }
+  
+  .history-list {
+    list-style-type: disc;
+    padding-left: 24px;
+  }
+  
+  .history-desc {
+    border-left: 1px solid var(--neutral-900);
+    padding-left: 8px;
+  }
+  
+  .concept-item {
+    padding-left: 12px;
+    border-left: 3px solid var(--neutral-300);
+  }
+  
+  .md-p{
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+    color: var(--neutral-600);
+  }
+  .md-pice{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+    color: var(--neutral-500);
+  }
+  
+  
+  .bi-heart {
+    font-size: 18px;
+  }
+  
+  .bi-heart-fill {
+    font-size: 20px;
+  }
+  
+  .bi-handbag {
+    font-size: 18px;
+  }
+  .icon-box-48{
+    font-size: 28px;
+  }
+  .icon-18px{
+    font-size: 18px;
+  }
+  .md{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+    color: var(--neutral-900);
+  }
+  .quote{
+    border-radius: 12px;
+    text-align: center;
+  }
+  
+  
+  
+  .collection-card a {
+    color: inherit;
+  }
+  
+  .collection-info {
+    width: 100%;
+  }
+  .login-intro {
+    background-image: url("../img/login.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    border-radius: 12px;
+  }
+  
+  .login-bg {
+    background-image: url("../img/login-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 12px;
+  }
+  

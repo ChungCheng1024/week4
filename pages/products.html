@@ -4,30 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products page</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>產品列表頁</title>
+   
 </head>
 
 <body>
-    <!-- 頂部導覽列 -->
-    <nav class="container d-flex py-4 py-sm-3">
-        <div class="d-flex align-items-center w-1p ">
-          <div class="mr-12">
-            <a href="#"><img src="../assets/img/logo.svg" alt="logo" /></a>
-          </div>
-          <ul class="d-flex ">
-            <li class="py-3 mr-10 d-sm-none">
-              <a href="products.html" class="fw-5 text-decoration-none text-primary">商品列表</a>
-            </li>
-            <li class="py-3 d-sm-none">
-              <a href="story.html" class="fw-5 text-decoration-none text-primary">品牌故事</a>
-            </li>
-          </ul>
-          <div class="ml-auto">
-            <a href="#"><i class="bi bi-person icon-box-48" style="color: black;"></i></a>
-          </div>
-        </div> 
-      </nav>
+    <%- include('./layout/header'); -%>
 
 
 <main class="container py-8 mb-12">
@@ -173,39 +155,8 @@
 
 
 </main>
-
-<!-- hightlight亮點區域 -->
-<section class="bg-hightlight">
-    <div class="bg-primary-200 d-flex justify-content-center align-items-center">
-        <p class="h4 mr-6 my-8-1 h5-md mr-md-4 my-md-8">加入會員取得 9 折優惠</p>
-        <button type="button" class="btn btn-dark my-6">馬上註冊</button>
-    </div>
-</section>
-
-<!-- 頁尾(footer) -->
-<footer class="bg-footer py-16 py-sm-8 px-sm-3" >
-    <div class="container">
-    <nav class="d-flex justify-content-sb align-items-center mb-6 d-sm-block mb-sm-6  ">
-        <a class="fw-5 mr-10 text-primary text-decoration-none mb-md-2 "  href="https://chungcheng1024.github.io/no1week/">
-        <img  src="../assets/img/logo.svg" alt="logo">
-    </a>
-      <ul class="d-flex align-items-center d-sm-block px-sm-3 ">
-        <li class="py-sm-3 mb-sm-1 mb8 ">
-            <a href="#" class="fw-5 mr-10 text-primary text-decoration-none ">商品列表
-            </a>
-        </li>
-    <li class="py-sm-3">
-    <a class="fw-5 py-3 text-primary text-decoration-none" href="story.html" >
-        品牌故事</a>
-  </li>
-  </ul>  
-</nav>
-<div class="pt-8 border-top">
-    <p class="sm text-center text-neutral-600 mb-1">Copyright ©2025 URBNSTYLE</p>
-    <p class="sm text-center text-neutral-600">All Rights Reserved.</p>
-</div> 
-</div>
-</footer>
+<%- include('./layout/aside'); -%>
+<%- include('./layout/footer'); -%>
 
 
 

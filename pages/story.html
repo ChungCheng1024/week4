@@ -5,29 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>品牌故事</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
 </head>
 
 <body>
-    <!-- 頂部導覽列 -->
-    <nav class="container d-flex py-4 py-sm-3">
-        <div class="d-flex align-items-center w-1p">
-          <div class="mr-12">
-            <a href="#"><img src="../assets/img/logo.svg" alt="logo" /></a>
-          </div>
-          <ul class="d-flex ">
-            <li class="py-3 mr-10 d-sm-none">
-              <a href="products.html" class="fw-5 text-decoration-none text-primary">商品列表</a>
-            </li>
-            <li class="py-3 d-sm-none">
-              <a href="story.html" class="fw-5 text-decoration-none text-primary">品牌故事</a>
-            </li>
-          </ul>
-          <div class="ml-auto">
-            <a href="#"><i class="bi bi-person icon-18px" style="color: black;"></i></a>
-          </div>
-        </div> 
-      </nav>
+    <%- include('./layout/header'); -%>
       
       <!-- 品牌故事標題圖 -->
     <div class="brand-title">
@@ -42,9 +24,9 @@
                      <h3 class="h5 primary-color text-center mb-3 text-align-md-start">
                         走出城市的節奏，穿上自己的步調。
                     </h3>
-                        <p class="text-center mb-1 text-align-md-start">我們相信，每一雙鞋都該帶著個性出場。</p>
-                        <p class="text-center mb-1 text-align-md-start">在 URBNSTEP，我們認為鞋履不只是穿戴飾品，更是你與世界連結的語言。</p>
-                        <p class="text-center text-align-md-start">融合城市結構與機能語彙，我們打造適合都會節奏的風格鞋款，陪你自信穿梭每一場風景。</p>
+                        <p class="text-center  text-align-md-start ">我們相信，每一雙鞋都該帶著個性出場。</p>
+                        <p class="text-center mb-1 mt-1 text-align-md-start ">在 URBNSTEP，我們認為鞋履不只是穿戴飾品，更是你與世界連結的語言。</p>
+                        <p class="text-center text-align-md-start ">融合城市結構與機能語彙，我們打造適合都會節奏的風格鞋款，陪你自信穿梭每一場風景。</p>
             </div>
         </div>
         <!-- 品牌故事介紹 -->
@@ -107,37 +89,9 @@
     </div>
 </div>
 
-<!-- hightlight亮點區域 -->
- <section class="bg-hightlight">
-    <div class="bg-primary-200 d-flex justify-content-center align-items-center">
-        <p class="h4 mr-6 my-8-1 h5-md mr-md-4 my-md-8">加入會員取得 9 折優惠</p>
-        <button type="button" class="btn btn-dark">馬上註冊</button>
-    </div>
-</section>
-<!-- 底部區域(footer) -->
-    <footer class="bg-footer py-16 py-sm-8 px-sm-3" >
-        <div class="container">
-        <nav class="d-flex justify-content-sb align-items-center mb-6 d-sm-block mb-sm-6">
-            <a class="fw-5 mr-10 text-primary text-decoration-none mb8" href="#">
-            <img  src="../assets/img/logo.svg" alt="logo">
-        </a>
-          <ul class="d-flex align-items-center d-sm-block px-sm-3">
-            <li class="mr-10 me-sm-0 mb-sm-1 ">
-                <a href="#" class="fw-5 mr-10 text-primary text-decoration-none ">商品列表
-                </a>
-            </li>
-        <li class="py-sm-3">
-        <a class="fw-5 py-3 text-primary text-decoration-none" href="story.html" >
-            品牌故事</a>
-      </li>
-      </ul>  
-    </nav>
-    <div class="pt-8">
-        <p class="sm text-center text-neutral-600 mb-1">Copyright ©2025 URBNSTYLE</p>
-        <p class="sm text-center text-neutral-600">All Rights Reserved.</p>
-    </div> 
-    </div>
-    </footer>
+
+<%- include('./layout/aside'); -%>
+<%- include('./layout/footer'); -%>
     <script type="module" src="/main.js"></script>
 
 </body>

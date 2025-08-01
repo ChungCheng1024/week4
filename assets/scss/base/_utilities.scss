@@ -304,9 +304,11 @@
   .mb-12 {
     margin-bottom: 48px;
   }
-  
-  .mr-2 {
+  .mr-1{
     margin-right: 4px;
+  }
+  .mr-2 {
+    margin-right: 8px;
   }
   
   .mr-3 {
@@ -709,7 +711,7 @@
       margin: 0 auto;
     }
     .brand-title {
-      background-image: url("/week4/img/hero-sm.png");
+      background-image: url("../img/hero-sm.png");
       padding: 87px 0;
       background-size: cover;
       background-position: center;

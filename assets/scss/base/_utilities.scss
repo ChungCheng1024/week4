@@ -709,17 +709,21 @@
       margin: 0 auto;
     }
     .brand-title {
-      background-image: url("../img/hero-sm.png");
+      background-image: url("/week4/img/hero-sm.png");
       padding: 87px 0;
+      background-size: cover;
+      background-position: center;
+      
+    
     }
     .brand-title .eng-title {
       font-size: 20px;
     }
+    .category .active {
+      color: var(--primary-400);
+    }
+    
   }
-  .category .active {
-    color: var(--primary-400);
-  }
-  
   @media screen and (max-width: 576px) {
     .product-action {
       display: flex;

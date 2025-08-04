@@ -1,7 +1,7 @@
 .breadcrumb-item + .breadcrumb-item::before {
     content: "/";
     padding: 0 12px;
-    color: var(--neutral-300);
+    color: $neutral-300;
     font-weight: 700;
   }
   
@@ -10,7 +10,7 @@
   }
   
   .breadcrumb-link {
-    color: var(--neutral-600);
+    color: $neutral-600;
     text-decoration: none;
     font-weight: 500;
   }

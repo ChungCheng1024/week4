@@ -4,17 +4,17 @@
     top: 0;
     left: 0;
     padding: 8px 12px;
-    color: var(--primary-400);
-    background-color: var(--primary-100);
+    color: $primary-400;
+    background-color: $primary-100;
   }
   
   .swiper-pagination-bullet {
-    background-color: var(--neutral-300);
+    background-color: $neutral-300;
     opacity: 1;
   }
   
   .swiper-pagination-bullet-active {
-    background-color: var(--primary-400);
+    background-color: $primary-400;
   }
   
   .enroll-login-tab {
@@ -22,7 +22,7 @@
     text-decoration: none;
     text-align: center;
     padding: 12px 0;
-    border-bottom: 2px solid var(--neutral-900);
+    border-bottom: 2px solid $neutral-900;
   }
   
   .enroll-enroll-tab {
@@ -30,7 +30,7 @@
     text-decoration: none;
     text-align: center;
     padding: 12px 0;
-    border-bottom: 2px solid var(--neutral-300);
+    border-bottom: 2px solid $neutral-300;
   }
   
   .login-login-tab {
@@ -38,7 +38,7 @@
     text-decoration: none;
     text-align: center;
     padding: 12px 0;
-    border-bottom: 2px solid var(--neutral-300);
+    border-bottom: 2px solid $neutral-300;
   }
   
   .login-enroll-tab {
@@ -46,7 +46,7 @@
     text-decoration: none;
     text-align: center;
     padding: 12px 0;
-    border-bottom: 2px solid var(--neutral-900);
+    border-bottom: 2px solid $neutral-900;
   }
   
   
@@ -63,7 +63,7 @@
   
   
   .section-line {
-    border-bottom: 1px solid var(--neutral-300);
+    border-bottom: 1px solid $neutral-300;
   }
   
   .history-list {
@@ -72,27 +72,27 @@
   }
   
   .history-desc {
-    border-left: 1px solid var(--neutral-900);
+    border-left: 1px solid $neutral-900;
     padding-left: 8px;
   }
   
   .concept-item {
     padding-left: 12px;
-    border-left: 3px solid var(--neutral-300);
+    border-left: 3px solid $neutral-300;
   }
   
   .md-p{
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.05em;
-    color: var(--neutral-600);
+    color: $neutral-600;
   }
   .md-pice{
     font-weight: 400;
     font-size: 14px;
     line-height: 1.5;
     letter-spacing: 0.05em;
-    color: var(--neutral-500);
+    color: $neutral-500;
   }
   
   
@@ -118,7 +118,7 @@
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.05em;
-    color: var(--neutral-900);
+    color: $neutral-900;
   }
   .quote{
     border-radius: 12px;

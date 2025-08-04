@@ -2,7 +2,9 @@
   text-decoration: underline;
 }
 
-
+.category .active {
+  color: $primary-400;
+}
 
 .next300 {
   color: $neutral-300;
@@ -76,7 +78,7 @@
   font-style: bold;
   font-weight: 700;
   line-height: 1.2;
-  letter-spacing: 0.05em;
+  
 }
 
 .h4 {

@@ -137,3 +137,17 @@ img,svg{
     max-width: 100%; /* 確保圖片和SVG不會超出其容器的寬度 */
     height: auto; /* 確保圖片和SVG的高度自動調整以保持比例 */
 }
+body {
+  font-family: "Noto Sans TC", serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  color: var(--neutral-900);
+}
+
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}

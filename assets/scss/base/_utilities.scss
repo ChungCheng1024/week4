@@ -1,6 +1,9 @@
 .next300{
     color: var(--neutral-300);
   }
+  .text-left{
+    text-align: left;
+  }
   .primary-color {
     color: var(--primary-400);
   }
@@ -129,7 +132,13 @@
   text-align: right;
 }
 
-
+.display-1
+{
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+}
 
 .d-flex {
     display: flex;
@@ -252,7 +261,9 @@
   .mx-auto {
     margin: 0 auto;
   }
-  
+  .ml-200{
+    margin-left: 200px;
+  }
   .ml-auto {
     margin-left: auto;
   }

@@ -21,3 +21,10 @@ $neutral-900: #212529;
 $danger-300: #d74f4f;
 $pad:767px;
 $phone:576px;
+
+
+@mixin title-md{
+	
+	font-weight: 500;
+	line-height: 1.5;
+}

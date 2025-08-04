@@ -1,0 +1,13 @@
+.pagination a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    &:hover{
+        background-color: $neutral-100;
+    }
+    &:active{
+        background-color: $primary-300;
+    }
+}

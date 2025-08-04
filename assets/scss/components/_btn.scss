@@ -1,8 +1,62 @@
+@mixin btn-Primary() {
+  background-color: $primary-300;
+  color: $neutral-900;
+  border-radius: 4px;
+  font-size: 16px;
+  
+  &:hover {
+    color: $primary-500;}
+  &:focus {
+    color: $primary-500;
+  }
+}
+
+.btn-primary {
+    @include btn-Primary();
+    padding: 12px 24px;
+  }
+  
+  .btn-secondary {
+    background-color: $neutral-300;
+    color: $neutral-900;
+    min-height: 48px;
+    &:hover {
+      background-color: $neutral-400;
+      color: $neutral-0;
+    }
+  }
+  
+  .btn-danger {
+    background-color: $danger-300;
+    color: $neutral-0;
+    min-height: 48px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .btn {
     border-radius: 4px;
     padding: 12px 24px;
-    color: var(--neutral-900);
+    color: $neutral-900;
     line-height: 1.5;
     font-weight: 500;
     cursor: pointer;
@@ -11,30 +65,30 @@
   }
   
   .btn-green {
-    background-color: var(--primary-300);
+    background-color: $primary-300;
     min-height: 48px;
   }
   
   .btn-dark {
-    background-color: var(--neutral-900);
-    color: var(--neutral-0);
+    background-color: $neutral-900;
+    color: $neutral-0;
   
   }
   
   .btn-light {
-    border: 1px solid var(--neutral-900);
-    color: var(--neutral-900);
+    border: 1px solid $neutral-900;
+    color: $neutral-900;
   }
   .btn-light:hover {
-    background-color: var(--neutral-900);
-    color: var(--neutral-0);
+    background-color: $neutral-900;
+    color: $neutral-0;
   }
   
   .btn-tab {
     width: 100%;
     font-weight: 400;
-    border: 1px solid var(--neutral-300);
-    background-color: var(--neutral-0);
+    border: 1px solid $neutral-300;
+    background-color: $neutral-0;
   }
 
   .page-item .btn {
@@ -43,22 +97,23 @@
     font-weight: 400;
   }
   .page-item .btn:hover {
-    background-color: var(--neutral-100);
+    background-color: $neutral-100;
   }
   .page-item .btn.active {
-    background-color: var(--primary-300);
+    background-color: $primary-300;
     font-weight: 500;
   }
   
 .btn-product-size {
-    border: 1px solid var(--neutral-300);
+    border: 1px solid $neutral-300;
     width: 160px;
   }
   .btn-product-size:hover {
-    border-color: var(--neutral-900);
+    border-color: $neutral-900;
+    color: $neutral-0;
   }
   .btn-product-size.active {
-    border-color: var(--neutral-900);
+    border-color: $neutral-900;
   }
   .btn-product-size:disabled{
     opacity: 1;                 // 保持按鈕整體不透明

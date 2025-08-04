@@ -138,7 +138,7 @@ img,svg{
     height: auto; /* 確保圖片和SVG的高度自動調整以保持比例 */
 }
 body {
-  font-family: "Noto Sans TC", serif;
+  font-family: 'Montserrat', 'Noto Sans TC', sans-serif;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.05em;
@@ -150,4 +150,8 @@ body {
 ::after,
 ::before {
   box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+  color: $neutral-900;
 }

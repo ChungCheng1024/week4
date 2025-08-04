@@ -1,9 +1,10 @@
 
+
 .brand-title {
     background-image: url("../img/hero.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     padding: 152px 0;
   }
   .brand-title .eng-title {
@@ -11,17 +12,8 @@
   }
   
 .brand-story a:hover {
-    background: var(--primary-400);
-    color: var(--neutral-0);
+    background: $primary-400;
+    color: $neutral-0;
   }
   
-  .brand-index {
-    background-image: url("../img/banner.png");
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: cover;       // 確保圖片不裁切
-    height: auto;
-    max-height: 800px;              // 確保容器足夠大
-    padding-top: 289px;
-    padding-bottom: 289px;
-  }
+  

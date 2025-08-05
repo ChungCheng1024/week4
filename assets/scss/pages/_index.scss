@@ -1,5 +1,5 @@
-  .index-banner {
-    background-image: url("../img/banner.png");
+.index-banner {
+    background-image: url("/assets/img/banner.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -7,3 +7,10 @@
     padding-left: 200px;
 }
 
+.index-brand {
+    background-image: url("/assets/img/banner-co-branded.png"); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    }

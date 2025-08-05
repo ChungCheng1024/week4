@@ -40,4 +40,24 @@
     width: 19px;
     height: 19px;
   }
+  .product-card {
+    position: relative;
+  
+    .tag {
+      position: absolute;
+      top: 0px;
+      left: 8px;
+  
+      p {
+        background-color: $primary-100;
+        padding: 8px 12px;
+        margin: 0;
+        font-size: 14px;
+        font-weight: bold;
+        color: $primary-400;
+        border-radius: 4px;
+      }
+    }
+  }
+  
   

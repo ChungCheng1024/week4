@@ -1,5 +1,5 @@
 .index-banner {
-    background-image: url("/assets/img/banner.png");
+    background-image: url("../img/banner.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -8,9 +8,16 @@
 }
 
 .index-brand {
-    background-image: url("/assets/img/banner-co-branded.png"); 
+    background-image: url("../img/banner-co-branded.png"); 
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
-    position: absolute;
+    background-size:cover;
+    
     }
+
+.star-tag{
+  position: absolute;
+  top: -32px;
+  left: -80px;
+
+}

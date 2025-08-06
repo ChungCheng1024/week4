@@ -1,0 +1,28 @@
+.card-overlay {
+    position: relative; // 讓 card-text 以它為定位基準
+    display: block;
+  
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  
+    .card-text {
+      position: absolute;
+      inset: 0; // top, right, bottom, left 全設為 0
+      background: rgba(0, 0, 0, 0.5);
+      display: flex;
+      flex-direction: column; // 垂直排列兩行文字
+      align-items: center;    // 水平置中
+      justify-content: center; // 垂直置中
+      color: $neutral-0;
+      text-align: center;
+      z-index: 1;
+  
+      &:hover {
+        color: $primary-200;
+      }
+    }
+  }
+  

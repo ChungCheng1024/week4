@@ -1,0 +1,24 @@
+.indicator {
+    position: absolute;
+    bottom:8px; /* 距離背景底的距離，可調整 */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+  }
+  
+  .indicator span {
+    width: 8px;
+    height: 8px;
+    background-color: $neutral-400;
+    border-radius: 50%;
+  }
+  
+  .indicator span.active {
+    width: 24px;
+    height: 8px;
+    background-color: $neutral-600;
+    border-radius: 4px;
+  }
+  
+  

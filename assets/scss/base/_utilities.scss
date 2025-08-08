@@ -208,7 +208,9 @@
 .pt-8 {
   padding-top: 32px;
 }
-
+.pt-16{
+  padding-top: 64px;
+}
 .pr-2 {
   padding-right: 8px;
 }
@@ -221,6 +223,9 @@
 }
 .pb-12 {
   padding-bottom: 48px;
+}
+.pb-16 {
+  padding-bottom: 64px;
 }
 .border{
   border: 1px solid $neutral-300;

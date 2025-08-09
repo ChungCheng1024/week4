@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>產品詳情頁</title>
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
   </head>
   <body>
      <!-- 頂部導覽列 -->
@@ -13,9 +13,9 @@
     <main class="container  " >
       <div class="row ">
         <!-- 產品圖片 -->
-        <div class="col-7 mb-16">
+        <div class="col-7 mb-md-6">
           <div class="product-row ">
-            <div class="product-col mb-2 col-md-4  mb-6 ">
+            <div class="product-col mb-2 col-md-4  ">
               <img class="" src="../assets/img/image.png" alt="" />
             </div>
             <div class="product-col mb-2 d-md-none">
@@ -86,7 +86,7 @@
             </div>
           </div>
           <!-- 產品尺寸 -->
-          <div class="mb-12">
+          <div class="mb-12 mb-md-6">
             <h3 class="mb-2">尺寸</h3>
             <div class="d-flex flex-wrap gap-2 mb-2">
               <button type="button" class="btn btn-product-size active">
@@ -190,7 +190,23 @@
 
 
 <script type="module" src="/main.js"></script>
-
+<script>document.querySelectorAll('.heart-btn').forEach(button => {
+  button.addEventListener('click', function() {
+    // 僅在響應式（小於 767px）下觸發圖示切換
+    if (window.innerWidth <= 767) {
+      // 切換 active 類別
+      this.classList.toggle('active');
+      
+      // 切換圖示
+      const icon = this.querySelector('i');
+      if (icon.classList.contains('bi-heart')) {
+        icon.classList.replace('bi-heart', 'bi-heart-fill');  // 顯示實心圖示
+      } else {
+        icon.classList.replace('bi-heart-fill', 'bi-heart');  // 顯示空心圖示
+      }
+    }
+  });
+});</script>
 
   </body>
 </html>

@@ -91,6 +91,18 @@
     background-color: $neutral-0;
   }
 
+  .page-item .btn {
+    border-radius: 0;
+    padding: 8px 15px;
+    font-weight: 400;
+  }
+  .page-item .btn:hover {
+    background-color: $neutral-100;
+  }
+  .page-item .btn.active {
+    background-color: $primary-300;
+    font-weight: 500;
+  }
   
 .btn-product-size {
     border: 1px solid $neutral-300;
@@ -111,3 +123,51 @@
     cursor: not-allowed;
     pointer-events: none;
   }
+
+
+ /* 預設顯示空心愛心圖示 */
+.bi-heart {
+  display: inline-block;
+}
+
+.bi-heart-fill {
+  display: none;
+}
+
+/* 響應式：在最大寬度 767px 時，顯示實心愛心，隱藏空心愛心 */
+@media (max-width: 767px) {
+  .bi-heart {
+    display: inline-block; /* 顯示空心愛心 */
+  }
+
+  .bi-heart-fill {
+    display: none; /* 隱藏實心愛心 */
+  }
+
+  /* 點擊後顯示實心愛心，隱藏空心愛心 */
+  .heart-btn.active .bi-heart {
+    display: none; /* 隱藏空心愛心 */
+  }
+
+  .heart-btn.active .bi-heart-fill {
+    display: inline-block; /* 顯示實心愛心 */
+  }
+
+  /* 防止按鈕顏色和邊框改變 */
+  .btn-light {
+    background-color: transparent !important; /* 保持透明背景 */
+    color: $neutral-900 !important; /* 保持文字顏色 */
+    border: none !important; /* 去除邊框 */
+    
+    &:hover {
+      background-color: transparent !important; /* 不變背景顏色 */
+      color: $neutral-900 !important; /* 不改變文字顏色 */
+    }
+
+    &:active {
+      background-color: transparent !important; /* 點擊後不變背景顏色 */
+      color: $neutral-900 !important; /* 不改變文字顏色 */
+      border: none !important; /* 點擊後去除邊框 */
+    }
+  }
+}

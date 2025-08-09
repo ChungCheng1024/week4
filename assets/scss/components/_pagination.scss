@@ -1,13 +1,43 @@
-.pagination a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    &:hover{
+// 分頁容器連結按鈕
+.pagination {
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+  
+      // 狀態樣式
+      &:hover {
         background-color: $neutral-100;
-    }
-    &:active{
+      }
+      &:active {
         background-color: $primary-300;
+      }
+  
+      // 禁用狀態
+      &.disabled {
+        color: #ccc;            // 淡灰色
+        pointer-events: none;   // 禁止點擊
+        cursor: not-allowed;
+      }
     }
-}
+  }
+  
+  // 分頁項目內的按鈕
+  .page-item {
+    .btn {
+      border-radius: 0;
+      padding: 8px 15px;
+      font-weight: 400;
+  
+      &:hover {
+        background-color: $neutral-100;
+      }
+      &.active {
+        background-color: $primary-300;
+        font-weight: 500;
+      }
+    }
+  }
+  

@@ -39,7 +39,6 @@
 .text-white {
   color: $neutral-0;
 }
-
 .bg-color-1 {
   background-color: $primary-300;
 }
@@ -543,6 +542,136 @@
     font-size: 40px;
   }
 }
+// Text colors
+.text-primary-100 {
+  color: $primary-100;
+}
+
+.text-primary-200 {
+  color: $primary-200;
+}
+
+.text-primary-300 {
+  color: $primary-300;
+}
+
+.text-primary-400 {
+  color: $primary-400;
+}
+
+.text-primary-500 {
+  color: $primary-500;
+}
+
+.text-neutral-0 {
+  color: $neutral-0;
+}
+
+.text-neutral-100 {
+  color: $neutral-100;
+}
+
+.text-neutral-200 {
+  color: $neutral-200;
+}
+
+.text-neutral-300 {
+  color: $neutral-300;
+}
+
+.text-neutral-400 {
+  color: $neutral-400;
+}
+
+.text-neutral-500 {
+  color: $neutral-500;
+}
+
+.text-neutral-600 {
+  color: $neutral-600;
+}
+
+.text-neutral-700 {
+  color: $neutral-700;
+}
+
+.text-neutral-800 {
+  color: $neutral-800;
+}
+
+.text-neutral-900 {
+  color: $neutral-900;
+}
+
+.text-danger-300 {
+  color: $danger-300;
+}
+
+// Background colors
+.bg-primary-100 {
+  background-color: $primary-100;
+}
+
+.bg-primary-200 {
+  background-color: $primary-200;
+}
+
+.bg-primary-300 {
+  background-color: $primary-300;
+}
+
+.bg-primary-400 {
+  background-color: $primary-400;
+}
+
+.bg-primary-500 {
+  background-color: $primary-500;
+}
+
+.bg-neutral-0 {
+  background-color: $neutral-0;
+}
+
+.bg-neutral-100 {
+  background-color: $neutral-100;
+}
+
+.bg-neutral-200 {
+  background-color: $neutral-200;
+}
+
+.bg-neutral-300 {
+  background-color: $neutral-300;
+}
+
+.bg-neutral-400 {
+  background-color: $neutral-400;
+}
+
+.bg-neutral-500 {
+  background-color: $neutral-500;
+}
+
+.bg-neutral-600 {
+  background-color: $neutral-600;
+}
+
+.bg-neutral-700 {
+  background-color: $neutral-700;
+}
+
+.bg-neutral-800 {
+  background-color: $neutral-800;
+}
+
+.bg-neutral-900 {
+  background-color: $neutral-900;
+}
+
+.bg-danger-300 {
+  background-color: $danger-300;
+}
+
 /* 手機：只保留 icon，變成 48x48 的按鈕 */
 @media (max-width: 767px){
   .icon-btn-sm-only {

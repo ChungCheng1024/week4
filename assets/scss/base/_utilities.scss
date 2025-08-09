@@ -537,7 +537,12 @@
     letter-spacing: 0.05em;
     color: $neutral-900;
   }
-
+  .gap-md-1{
+    gap: 4px;
+  }
+  .gap-md-2 {
+    gap: 8px;
+  }
   .md-fz40 {
     font-size: 40px;
   }
@@ -775,6 +780,9 @@
   }
   .col-7 {
     width: 100% !important;
+  }
+  .flex-md-nowrap{
+    flex-wrap: nowrap;
   }
   .flex-md-col {
     flex-direction: column;

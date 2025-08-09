@@ -505,6 +505,13 @@
   letter-spacing: 0.05em;
   color: $neutral-900;
 }
+.title-porduct{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  color: $neutral-600;
+}
 /* RWD 響應式*/
 @media (max-width: 767px) {
   .quote {

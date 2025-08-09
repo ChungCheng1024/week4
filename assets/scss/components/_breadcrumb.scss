@@ -9,13 +9,13 @@
   .breadcrumb-item {
     display: flex;
     align-items: center;
-    color: $neutral-600;
     font-size: 16px;
+    color: $neutral-600;
 
-    a.breadcrumb-link {
+    .breadcrumb-link {
+      display: inline-block;
       text-decoration: none;
-      color: $neutral-600;
-      font-weight: 500;
+      color: inherit;
 
       &:hover {
         text-decoration: underline;
@@ -27,12 +27,22 @@
       font-weight: 700;
     }
 
-    + .breadcrumb-item::before {
+    // 分隔符號，參考你給的大小
+    &::after {
       content: "/";
-      margin: 0 12px;
       color: $neutral-300;
+      display: inline-block;
+      font-size: 16px;
+      line-height: 1.5;
+      letter-spacing: 0;
       font-weight: 700;
-      opacity: 0.4;
+      vertical-align: top;
+      margin: 0 12px;
+    }
+
+    &:last-child::after {
+      content: "";
+      margin: 0;
     }
   }
 }

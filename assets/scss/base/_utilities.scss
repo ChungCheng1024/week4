@@ -686,7 +686,9 @@
     justify-content: center !important;
     align-items: center !important;
   }
-
+  .overflow-x-md-auto {
+    overflow-x: auto;
+  }
   .icon-btn-sm-only:hover .bi-heart-fill {
     display: inline-block;
   }

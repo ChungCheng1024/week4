@@ -816,6 +816,12 @@
   }
 }
 @media (max-width: 767px){
+  .md-scrollbar-X {
+    flex-wrap: nowrap;
+    @include ScrollBar-X;
+  }
+  
+  
   .mb-md-6{
     margin-bottom: 24px;
   }

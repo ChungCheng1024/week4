@@ -9,40 +9,46 @@
   <body>
     <%- include('./layout/header'); -%>
     <!-- 首頁標題圖 -->
+    <nav class="md-navbar">
+      <ul>
+        <li><a href="products.html" class="bg-color-p200">商品列表</a></li>
+        <li><a href="story.html" class="bg-color-p100">品牌故事</a></li>
+      </ul>
+    </nav>
     <div
-      class="banner d-flex justify-content-center flex-direct-col text-white mb-16">
-      <h1 class="display-1 mb-4">URBNSTEP</h1>
-      <h2 class="h3 mb-12">Your Step, Your Statement</h2>
+      class="index-banner d-flex justify-content-center flex-direct-col text-white mb-16">
+      <h1 class="display-1 mb-4 mb-md-2 h2-md">URBNSTEP</h1>
+      <h2 class="h3 mb-12 mb-md-8 h5-md">Your Step, Your Statement</h2>
       <div><a class="btn-primary">立即選購</a></div>
     </div>
     <section class="mb-16">
-      <div class="container text-align-center">
+      <div class="container text-align-center py-md-10">
         <h2 class="display-2 mb-3">New Arrival</h2>
         <p class="h2 mb-8">新品上市</p>
         <ul class="row">
-          <li class="col-6 mb-10 text-left">
+          <li class="col-6 col-md-2 mb-10 text-left mb-md-6">
             <img class="mb-3" src="../assets/img/new-1.png" alt="" />
             <h2 class="h5 mb-1">Monoverse</h2>
             <p class="md-p">NT$3,600</p>
           </li>
-          <li class="col-6 mb-10 text-left">
+          <li class="col-6 mb-10 text-left col-md-2">
             <img class="mb-3" src="../assets/img/new-2.png" alt="" />
             <h2 class="h5 mb-1">PLATFORM 404</h2>
             <p class="md-p">NT$2,600</p>
           </li>
-          <li class="col-6 text-left mb-16">
+          <li class="col-6 text-left mb-16 col-md-2">
             <img class="mb-3" src="../assets/img/new-3.png" alt="" />
             <h2 class="h5 mb-1">URBN Force</h2>
             <p class="md-p">NT$3,200</p>
           </li>
-          <li class="col-6 text-left">
+          <li class="col-6 text-left col-md-2">
             <img class="mb-3" src="../assets/img/new-4.png" alt="" />
             <h2 class="h5 mb-1">Mode90</h2>
             <p class="md-p">NT$4,000</p>
           </li>
         </ul>
-        <h2 class="h2 mb-4 text-left mt-16 py-5px">熱銷補貨</h2>
-        <ul class="text-left row">
+        <h2 class="h2 mb-4 text-left mt-16 py-5px h4-md">熱銷補貨</h2>
+        <ul class="text-left row md-scrollbar-X">
           <li class="col-3 product-card">
             <div class="tag fz14">
               <p>人氣 No.1</p>
@@ -71,20 +77,25 @@
       </div>
     </section>
     <section>
-      <div class="index-brand my-12 text-center">
-        <div class="py-100  ">
-          <div class="mb-4 d-flex justify-content-center align-items-center">
-            <h3 class="mr-6 text-white display-2 position-relative">
+      <div class="index-brand my-12 text-center my-md-6">
+        <div class="py-100 py-md-16 ">
+          <div class="mb-4 d-flex justify-content-center align-items-center md-d-block">
+            <h3 class="mr-6 mr-md-0 mb-md-2 h2-md text-white display-2 position-relative">
               URBNSTEP
               <img class="star-tag" src="../assets/img/star.svg" alt="" />
             </h3>
-            <h4 class="h1 text-primary-300 mr-6">x</h4>
-              <h3 class="display-2 text-white">Kevin Chen</h3>
+            <h4 class="mr-md-0 h1 mr-6 mb-md-2 h3-md text-primary-300">x</h4>
+              <h3 class="display-2 h2-md text-white">Kevin Chen</h3>
           </div>
-          <div >
-            <h4 class="text-white h2 mb-8">跨界聯名，限量發售</h4>
-          <p class="lg mb-12">新銳漫畫家 Kevin Chen 親自操刀設計，街頭能量全面引爆！</p>
-          <div class=""><a class="btn-primary " href="">立即搶購</a></div>
+            <h4 class="h5-md mb-md-6 text-white h2 mb-8 text-center">跨界聯名，限量發售</h4>
+          <p class="lg mb-12 d-sm-none text-neutral-500 text-center">新銳漫畫家 Kevin Chen 親自操刀設計，街頭能量全面引爆！</p>
+          <p class="d-none d-md-block mb-1 para-p text-neutral-500 text-center md-title-p">
+            新銳漫畫家 Kevin Chen 親自操刀設計
+          </p>
+          <p class="d-none d-md-block mb-8 para-p text-neutral-500 text-center md-title-p">
+            街頭能量全面引爆！
+          </p>
+          <div class="d-flex justify-content-center"><a class="btn-primary " href="">立即搶購</a></div>
         </div>
         <div class="indicator justify-content-center align-items-end mt-21">
          <span class="active"></span>
@@ -96,9 +107,9 @@
     </section>
     <section>
     <div class="container mt-21 ">
-      <h2 class="h2 mb-4">依系列選購</h2>
+      <h2 class="h2 mb-4 h4-md">依系列選購</h2>
         <ul class="row mb-16" >
-        <li class="col-3">
+        <li class="col-3 col-md-6 mb-md-3">
           <a class="d-block card-overlay" href="">
             <img class="" src="../assets/img/product-6.png" alt="">
         <div class="card-text"> 
@@ -107,14 +118,14 @@
         </div>
         </a>
       </li>
-        <li class="col-3"><a class="d-block card-overlay" href="">
+        <li class="col-3 col-md-6 mb-md-3"><a class="d-block card-overlay" href="">
           <img class="" src="../assets/img/product-11.png" alt="">
       <div class="card-text"> 
         <h3 class="h3">STREETMODE</h3>
         <h3 class="h3">滑板系列</h3>
       </div>
       </a></li>
-        <li class="col-3"><a class="d-block card-overlay" href="">
+        <li class="col-3 col-md-6 "><a class="d-block card-overlay" href="">
           <img class="" src="../assets/img/product-9.png" alt="">
       <div class="card-text"> 
         <h3 class="h3">CHUNK DISTRICT</h3>
@@ -122,7 +133,7 @@
       </div>
       </a>
     </li>
-        <li class="col-3"><a class="d-block card-overlay" href="">
+        <li class="col-3 col-md-6"><a class="d-block card-overlay" href="">
           <img class="" src="../assets/img/product-1.png" alt="">
       <div class="card-text"> 
         <h3 class="h3">COLLAB ZONE</h3>
@@ -131,12 +142,12 @@
       </a>
     </li>
       </ul>
-      <h2 class="h2 mt-21 mb-4">穿搭靈感</h2>
+      <h2 class="h2 mt-21 mb-4 mb-md-21p h4-md">穿搭靈感</h2>
       <ul>
         <li></li>
       </ul>
     <div class="mb-16 py-14">
-    <ul class="card-wrap pb-16">
+    <ul class="card-wrap pb-16 md-scrollbar-X">
       <li>
         <img src="/assets/img/inspiration-1.png" alt="">
       </li>

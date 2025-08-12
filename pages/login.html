@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登入頁</title>
+</head>
+<body>
+    <%- include('./layout/header'); -%>
+    <div class="container py-16 py-md-0">
+        <div class="row flex-wrap">
+            <div class="col-5  col-md-4 ">
+                <img class="d-md-none"  src="../assets/img/login.png" alt="">
+                <img class="d-none d-md-block"  src="../assets/img/login-sm.png" alt="">
+            </div>
+            <div class="col-7 col-md-4 ">
+                <div class="login-form">
+                    <h2 class="mb-8 mb-md-6 h3 h4-md text-center">歡迎！</h2>
+                    <ul class="reg-login mb-8 mb-md-6 d-flex">
+                        <li class="w50p"><button class="py-3 h6 text-center">登入</button></li>
+                        <li class="w50p"><button class="py-3 h6 text-center">註冊</button></li>
+                    </ul>
+                    <ul>
+                        <li class="mb-2 border-radius-4 border-md-n300 bg-color-n0">
+                            <a class="d-flex align-items-center" href="#">
+                                <img class="d-block m-3" src="/assets/img/facebook.svg" alt="">
+                                <p class="title-md-p">Facebook 登入</p>
+                            </a>
+                        </li>
+                        <li class="mb-2 border-radius-4 border-md-n300 bg-color-n0">
+                            <a class="d-flex align-items-center " href="#">
+                                <img class="d-block m-3" src="/assets/img/apple.svg" alt="">
+                                <p class="title-md-p">Apple 登入</p>
+                            </a>
+                        </li>
+                        <li class="mb-2 border-radius-4 border-md-n300 bg-color-n0">
+                            <a class="d-flex align-items-center " href="#">
+                                <img class="d-block m-3" src="/assets/img/google.svg" alt="">
+                                <p class="title-md-p">Google 登入</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <%- include('./layout/footer'); -%>
+    <script type="module" src="../main.js"></script>
+</body>
+</html>

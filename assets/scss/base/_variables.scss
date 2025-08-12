@@ -4,7 +4,6 @@ $primary-200: #e8fec5;
 $primary-300: #c0fa73;
 $primary-400: #57a203;
 $primary-500: #477a11;
-
 // Neutral
 $neutral-0: #ffffff;
 $neutral-100: #f8f9fa;
@@ -16,19 +15,13 @@ $neutral-600: #6c757d;
 $neutral-700: #495057;
 $neutral-800: #343a40;
 $neutral-900: #212529;
-
 // Danger
 $danger-300: #d74f4f;
 $pad:767px;
 $phone:576px;
-
-
 @mixin title-md{
-	
 	font-weight: 500;
 	line-height: 1.5;
 }
-
 @mixin pad   { @media (max-width: $pad)   { @content; } }
 @mixin phone { @media (max-width: $phone) { @content; } }
-

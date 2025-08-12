@@ -5,28 +5,23 @@
   list-style: none;
   padding: 0;
   margin: 0;
-
   .breadcrumb-item {
     display: flex;
     align-items: center;
     font-size: 16px;
     color: $neutral-600;
-
     .breadcrumb-link {
       display: inline-block;
       text-decoration: none;
       color: inherit;
-
       &:hover {
         text-decoration: underline;
       }
     }
-
     &.active {
       color: $neutral-900;
       font-weight: 700;
     }
-
     // 分隔符號，參考你給的大小
     &::after {
       content: "/";
@@ -39,7 +34,6 @@
       vertical-align: top;
       margin: 0 12px;
     }
-
     &:last-child::after {
       content: "";
       margin: 0;

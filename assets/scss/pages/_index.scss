@@ -3,7 +3,6 @@
   background: center / cover no-repeat url("/assets/img/banner.png");
   height: 800px;
   padding-left: 200px;
-
   @include pad {
     background-image: url("/assets/img/banner-sm.png");
     height: 480px;
@@ -11,33 +10,27 @@
     background-position: 50% 75%;
   }
 }
-
 /* 聯名區塊 */
 .index-brand {
   background: center / cover no-repeat url("/assets/img/banner-co-branded.png");
   position: relative;
-
   @include pad {
     background-image: url("/assets/img/banner-co-branded-sm.png");
   }
-
   .star-tag {
     position: absolute;
     top: -32px;
     left: -80px;
     z-index: 1;
-
     @include pad {
       top: -20px;
       left: -24px; // 避免小螢幕被推出畫面
     }
   }
 }
-
 /* 手機導覽列 */
 .md-navbar {
   display: none;
-
   & ul { display: flex; }
   & li { width: 50%; }
   & a {
@@ -46,7 +39,6 @@
     text-align: center;
     &:hover { background-color: $primary-300; }
   }
-
   @include pad {
     display: block;
   }

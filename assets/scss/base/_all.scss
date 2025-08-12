@@ -2,12 +2,10 @@
 // 1. Base
 @import 'variables';
 @import 'reset';
-
 // 2. Layout
 @import '../layout/header';
 @import '../layout/footer';
 @import '../layout/grid';
-
 // 3. Components
 @import '../components/btn';
 @import '../components/banner';
@@ -19,9 +17,8 @@
 @import '../components/indicator';
 @import '../components/card';
 @import '../components/scrollbar';
-
 // 4. Pages
 @import '../pages/index';
-
+@import '../pages/login';
 // ✅ 5. Utilities（響應式、工具類放最後）
 @import 'utilities';

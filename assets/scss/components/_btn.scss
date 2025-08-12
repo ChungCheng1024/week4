@@ -3,19 +3,16 @@
   color: $neutral-900;
   border-radius: 4px;
   font-size: 16px;
-  
   &:hover {
     color: $primary-500;}
   &:focus {
     color: $primary-500;
   }
 }
-
 .btn-primary {
     @include btn-Primary();
     padding: 12px 24px;
   }
-  
   .btn-secondary {
     background-color: $neutral-300;
     color: $neutral-900;
@@ -25,34 +22,11 @@
       color: $neutral-0;
     }
   }
-  
   .btn-danger {
     background-color: $danger-300;
     color: $neutral-0;
     min-height: 48px;
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .btn {
     border-radius: 4px;
     padding: 12px 24px;
@@ -63,18 +37,14 @@
     border: none;
     background-color: transparent;
   }
-  
   .btn-green {
     background-color: $primary-300;
     min-height: 48px;
   }
-  
   .btn-dark {
     background-color: $neutral-900;
     color: $neutral-0;
-  
   }
-  
   .btn-light {
     border: 1px solid $neutral-900;
     color: $neutral-900;
@@ -83,14 +53,12 @@
     background-color: $neutral-900;
     color: $neutral-0;
   }
-  
   .btn-tab {
     width: 100%;
     font-weight: 400;
     border: 1px solid $neutral-300;
     background-color: $neutral-0;
   }
-
   .page-item .btn {
     border-radius: 0;
     padding: 8px 15px;
@@ -103,7 +71,6 @@
     background-color: $primary-300;
     font-weight: 500;
   }
-  
 .btn-product-size {
     border: 1px solid $neutral-300;
     width: 160px;
@@ -123,47 +90,37 @@
     cursor: not-allowed;
     pointer-events: none;
   }
-
-
  /* 預設顯示空心愛心圖示 */
 .bi-heart {
   display: inline-block;
 }
-
 .bi-heart-fill {
   display: none;
 }
-
 /* 響應式：在最大寬度 767px 時，顯示實心愛心，隱藏空心愛心 */
 @media (max-width: 767px) {
   .bi-heart {
     display: inline-block; /* 顯示空心愛心 */
   }
-
   .bi-heart-fill {
     display: none; /* 隱藏實心愛心 */
   }
-
   /* 點擊後顯示實心愛心，隱藏空心愛心 */
   .heart-btn.active .bi-heart {
     display: none; /* 隱藏空心愛心 */
   }
-
   .heart-btn.active .bi-heart-fill {
     display: inline-block; /* 顯示實心愛心 */
   }
-
   /* 防止按鈕顏色和邊框改變 */
   .btn-light {
     background-color: transparent !important; /* 保持透明背景 */
     color: $neutral-900 !important; /* 保持文字顏色 */
     border: none !important; /* 去除邊框 */
-    
     &:hover {
       background-color: transparent !important; /* 不變背景顏色 */
       color: $neutral-900 !important; /* 不改變文字顏色 */
     }
-
     &:active {
       background-color: transparent !important; /* 點擊後不變背景顏色 */
       color: $neutral-900 !important; /* 不改變文字顏色 */

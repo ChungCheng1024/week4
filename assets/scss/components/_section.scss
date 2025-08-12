@@ -1,4 +1,3 @@
-
 .hot-goods {
     position: absolute;
     top: 0;
@@ -7,16 +6,13 @@
     color: $primary-400;
     background-color: $primary-100;
   }
-  
   .swiper-pagination-bullet {
     background-color: $neutral-300;
     opacity: 1;
   }
-  
   .swiper-pagination-bullet-active {
     background-color: $primary-400;
   }
-  
   .enroll-login-tab {
     width: 50%;
     text-decoration: none;
@@ -24,7 +20,6 @@
     padding: 12px 0;
     border-bottom: 2px solid $neutral-900;
   }
-  
   .enroll-enroll-tab {
     width: 50%;
     text-decoration: none;
@@ -32,7 +27,6 @@
     padding: 12px 0;
     border-bottom: 2px solid $neutral-300;
   }
-  
   .login-login-tab {
     width: 50%;
     text-decoration: none;
@@ -40,7 +34,6 @@
     padding: 12px 0;
     border-bottom: 2px solid $neutral-300;
   }
-  
   .login-enroll-tab {
     width: 50%;
     text-decoration: none;
@@ -48,8 +41,6 @@
     padding: 12px 0;
     border-bottom: 2px solid $neutral-900;
   }
-  
-  
   .ad {
     margin-top: 48px;
     margin-bottom: 48px;
@@ -60,27 +51,21 @@
     padding-top: 100px;
     padding-bottom: 100px;
   }
-  
-  
   .section-line {
     border-bottom: 1px solid $neutral-300;
   }
-  
   .history-list {
     list-style-type: disc;
     padding-left: 24px;
   }
-  
   .history-desc {
     border-left: 1px solid $neutral-900;
     padding-left: 8px;
   }
-  
   .concept-item {
     padding-left: 12px;
     border-left: 3px solid $neutral-300;
   }
-  
   .md-p{
     font-weight: 400;
     line-height: 1.5;
@@ -94,16 +79,12 @@
     letter-spacing: 0.05em;
     color: $neutral-500;
   }
-  
-  
   .bi-heart {
     font-size: 18px;
   }
-  
   .bi-heart-fill {
     font-size: 20px;
   }
-  
   .bi-handbag {
     font-size: 18px;
   }
@@ -124,13 +105,9 @@
     border-radius: 12px;
     text-align: center;
   }
-  
-  
-  
   .collection-card a {
     color: inherit;
   }
-  
   .collection-info {
     width: 100%;
   }
@@ -142,7 +119,6 @@
     height: 100%;
     border-radius: 12px;
   }
-  
   .login-bg {
     background-image: url("../img/login-bg.png");
     background-position: center;
@@ -150,4 +126,3 @@
     background-size: cover;
     border-radius: 12px;
   }
-  

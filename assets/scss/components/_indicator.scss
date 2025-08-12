@@ -6,19 +6,15 @@
     display: flex;
     gap: 8px;
   }
-  
   .indicator span {
     width: 8px;
     height: 8px;
     background-color: $neutral-400;
     border-radius: 50%;
   }
-  
   .indicator span.active {
     width: 24px;
     height: 8px;
     background-color: $neutral-600;
     border-radius: 4px;
   }
-  
-  

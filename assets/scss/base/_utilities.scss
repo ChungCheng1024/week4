@@ -31,6 +31,9 @@
 .text-white {
   color: $neutral-0;
 }
+.bg-color-n0 {
+  background-color: $neutral-0;
+}
 .bg-color-1 {
   background-color: $primary-300;
 }
@@ -84,6 +87,9 @@
 .xs {
   font-weight: 700;
 }
+.border-radius-4 {
+  border-radius: 4px;
+}
 .sm {
   font-size: 14px;
 }
@@ -104,6 +110,9 @@
 .fw-7 {
   font-weight: 700;
 }
+.w50p{
+  width: 50%;
+}
 .fz14 {
   font-size: 14px;
 }
@@ -117,7 +126,6 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
- 
 }
 .text-center {
   text-align: center;
@@ -403,6 +411,14 @@
 .z-3 {
   z-index: 3;
 }
+.m-3{
+  margin: 12px;
+}
+.title-md-p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
 .md-p {
   font-weight: 500;
   font-size: 16px;
@@ -525,7 +541,6 @@
 .bg-danger-300 {
   background-color: $danger-300;
 }
-
 /* RWD 響應式*/
 @media (max-width: 767px) {
   .md-d-block {
@@ -685,7 +700,7 @@
     width: 50%;
   }
   .col-7 {
-    width: 100% !important;
+    width: 100%;
   }
   .flex-md-nowrap {
     flex-wrap: nowrap;
@@ -717,6 +732,9 @@
   }
   .d-sm-block {
     display: block;
+  }
+  .border-md-n300{
+    border-color: $neutral-300;
   }
 }
 @media (max-width: 767px) {

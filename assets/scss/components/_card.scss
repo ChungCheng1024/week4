@@ -1,13 +1,11 @@
 .card-overlay {
     position: relative; // 讓 card-text 以它為定位基準
     display: block;
-  
     img {
       display: block;
       width: 100%;
       height: auto;
     }
-  
     .card-text {
       position: absolute;
       inset: 0; // top, right, bottom, left 全設為 0
@@ -19,20 +17,17 @@
       color: $neutral-0;
       text-align: center;
       z-index: 1;
-  
       &:hover {
         color: $primary-200;
       }
     }
   }
-  
 .card-wrap{
   display: grid;
   margin: -4px;
   grid-template-columns: repeat(6, 1fr);
   li{
     padding: 4px;
-
   }
   .box1{
     grid-column-start:5 ;

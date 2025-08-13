@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>收藏頁面</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+</head>
+<body>
+    <%- include('./layout/header'); -%>
+    <div class="container">
+        <div class="row">
+          <div class="col-6 mx-auto mb-8 col-md-4">
+      
+            <!-- 我的收藏 -->
+            <h1 class="h3 mb-8 d-flex align-items-center justify-content-center">
+              <div class="circle-icon mr-3">
+                <i class="bi bi-check-lg"></i>
+              </div>
+              我的收藏
+            </h1>
+      
+            <!-- 門市營業時間 -->
+            <p class="store-hours-box bg-color-p100">
+                <i class="bi bi-truck primary-color fz24 mr-3"></i>
+                <span class="store-hours-text primary-color">
+                  <span class="line1">門市營業時間：</span>
+                  <span class="line2">週一至週五 10:00 - 22:00</span>
+                </span>
+              </p>
+              
+      
+            <!-- 商品列表 -->
+            <ul class="mb-16">
+      
+              <li class="text-left d-flex pb-8 border-bottom mt-8">
+                <img class="w-12px h-12px mr-4" src="../assets/img/product.png" alt="">
+                <div class="product-card" >
+                  <h2 class="h5 mb-2">PLATFORM 404</h2>
+                  <p class="md-neutral-600 mb-2">尺寸<span class="md ml-3">38</span></p>
+                  <p class="md-neutral-600">顏色<span class="md ml-3">Navy</span></p>
+                  <p class="price h6">NT$2,600</p>
+                </div>
+              </li>
+      
+              <li class="text-left d-flex pb-8 pt-8 border-bottom">
+                <img class="w-12px h-12px mr-4" src="../assets/img/product-4.png" alt="">
+                <div class="product-card" >
+                  <h2 class="h5 mb-2">BOOMLOK</h2>
+                  <p class="md-neutral-600 mb-2">尺寸<span class="md ml-3">38</span></p>
+                  <p class="md-neutral-600">顏色<span class="md ml-3">White</span></p>
+                  <p class="price h6">NT$3,200</p>
+                </div>
+              </li>
+      
+              <li class="text-left d-flex pb-8 pt-8 mb-8 border-bottom">
+                <img class="w-12px h-12px mr-4" src="../assets/img/product-3.png" alt="">
+                <div class="product-card" >
+                  <h2 class="h5 mb-2">MELTY KISS</h2>
+                  <p class="md-neutral-600 mb-2">尺寸<span class="md ml-3">38</span></p>
+                  <p class="md-neutral-600">顏色<span class="md ml-3">Violet</span></p>
+                  <p class="price h6">NT$4,000</p>
+                </div>
+              </li>
+      
+              <!-- 按鈕 -->
+              <li class="d-flex justify-content-center">
+                <button type="button" class="btn btn-dark md text-neutral-0 py-3 px-6">
+                  立即預約門市試穿
+                </button>
+              </li>
+      
+            </ul>
+      
+          </div>
+        </div>
+      </div>
+      
+      
+      
+    <%- include('./layout/footer'); -%>
+    <script type="module" src="/main.js"></script>
+</body>
+</html>

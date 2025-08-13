@@ -42,3 +42,53 @@
     grid-row-end: 4;
   }
 }
+
+.product-card{
+  position: relative;
+  flex: 1 1 auto;
+  min-width: 0;
+  padding-right: 80px;      /* 給右下價格留空間 */
+}
+.product-card .price{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+}
+
+/* 手機：價格回到文字流，顏色底下 */
+@media (max-width:767px){
+  .product-card{ padding-right: 0; }
+  .product-card .price{
+    position: static;
+    margin-top: 8px;        /* 與顏色行的間距 */
+  }
+}
+
+
+.store-hours-wrap {
+  display: flex;
+  align-items: flex-start; /* 讓圖示與第一行對齊 */
+  flex-wrap: wrap; /* 手機時可以換行 */
+}
+
+.store-hours {
+  display: inline; /* 桌面一行顯示 */
+}
+.store-hours-box {
+  display: flex;
+  align-items: center; /* 垂直置中圖示和文字 */
+  padding: 0.75rem; /* 保持背景有內距 */
+}
+
+.store-hours-text {
+  display: flex;
+  flex-direction: column; /* 預設是上下排列，方便響應式換行 */
+}
+
+@media (min-width: 768px) {
+  .store-hours-text {
+    flex-direction: row; /* 桌面板時讓兩段文字水平排列 */
+    gap: 0.25rem; /* 兩段之間的間距 */
+  }
+}

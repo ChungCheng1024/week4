@@ -1,0 +1,26 @@
+.container2 {
+    display: flex;
+    justify-content: center; /* 水平置中 */
+    max-width: 1920px;
+    
+  }
+  
+ 
+
+
+
+  .circle-icon {
+    display: inline-flex;             /* 讓內容置中 */
+    align-items: center;
+    justify-content: center;
+    width: 40px;                      /* 圓的直徑 */
+    height: 40px;
+    background-color: #c8f7a8;        /* 淺綠背景 */
+    border-radius: 50%;               /* 變圓 */
+  }
+  
+  .circle-icon i {
+    color: #2e7d32;                   /* 深綠勾勾 */
+    font-size: 20px;
+  }
+

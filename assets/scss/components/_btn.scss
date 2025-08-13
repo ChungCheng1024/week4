@@ -128,3 +128,18 @@
     }
   }
 }
+
+
+.btn-heart-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-heart-center .btn-text {
+  margin-left: 8px; /* icon 與文字的距離 */
+}
+.btn-heart-center i {
+  position: relative;
+  top: -3px; /* 往上移一點 */
+}

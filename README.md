@@ -46,3 +46,17 @@ git push -u origin main // 僅限第一次輸入，往後只需要輸入 git pus
 ```
 
 3. 初始化完畢後，執行 `npm run deploy` 指令進行自動化部署
+
+4.github page demo:
+
+https://chungcheng1024.github.io/week4/index.html -首頁
+
+https://chungcheng1024.github.io/week4/product.html -產品詳情頁
+
+https://chungcheng1024.github.io/week4/products.html -產品列表頁
+
+https://chungcheng1024.github.io/week4/story.html -品牌故事頁
+
+https://chungcheng1024.github.io/week4/like.html  -收藏頁
+
+https://chungcheng1024.github.io/week4/login.html -登入頁

@@ -43,13 +43,13 @@
   }
 }
 
-.product-card{
+.product-card2{
   position: relative;
   flex: 1 1 auto;
   min-width: 0;
   padding-right: 80px;      /* 給右下價格留空間 */
 }
-.product-card .price{
+.product-card2 .price{
   position: absolute;
   right: 0;
   bottom: 0;
@@ -58,8 +58,8 @@
 
 /* 手機：價格回到文字流，顏色底下 */
 @media (max-width:767px){
-  .product-card{ padding-right: 0; }
-  .product-card .price{
+  .product-card2{ padding-right: 0; }
+  .product-card2 .price{
     position: static;
     margin-top: 8px;        /* 與顏色行的間距 */
   }

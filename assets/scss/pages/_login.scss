@@ -1,43 +1,49 @@
 .login-form {
-    background-image: url("../img/login-bg.png");
-    padding: 160px 80px;
-    border-radius: 12px;
-    @include pad {
-      background-image: none; 
-      padding: 32px 12px;
-    }
-    .reg-form {
-        button {
-        width: 100%;
-        border: none;
-        background-color: transparent;
-        border-bottom: 2px solid $neutral-300;
-        &:hover { border-bottom: 2px solid $neutral-900; }
+  background-image: url("../img/login-bg.png");
+  padding: 160px 80px;
+  border-radius: 12px;
+  @include pad {
+    background-image: none;
+    padding: 32px 12px;
+  }
+  .reg-form {
+    button {
+      width: 100%;
+      border: none;
+      background-color: transparent;
+      border-bottom: 2px solid $neutral-300;
+      &:hover {
+        border-bottom: 2px solid $neutral-900;
       }
     }
   }
-  .img-col {
-    height: 589px;
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
-    @include pad { height: 240px; }
-  }
-  .login-form .reg-login button{
+}
+.img-col {
+  height: 589px;
+  img {
     width: 100%;
-    display: block;            // 保險填滿父層
-    border: none;
-    background-color: transparent;
-    border-bottom: 2px solid $neutral-300;
-    &:hover,
-      &:focus { border-bottom-color: $neutral-900; }
-      &.is-active {
-        border-bottom-color: $neutral-900;
-        color: $neutral-900;
-        font-weight: 600;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  @include pad {
+    height: 240px;
+  }
+}
+.login-form .reg-login button {
+  width: 100%;
+  display: block; // 保險填滿父層
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid $neutral-300;
+  &:hover,
+  &:focus {
+    border-bottom-color: $neutral-900;
+  }
+  &.is-active {
+    border-bottom-color: $neutral-900;
+    color: $neutral-900;
+    font-weight: 600;
   }
 }
 
@@ -66,13 +72,21 @@
   cursor: pointer;
 }
 
-
-
-
-
 .color-group {
-  input{position:absolute;opacity:0;pointer-events:none;}
-  input + label p{transition:color .2s,font-weight .2s;}
-  input:not(:checked)+label p{color:$neutral-700;font-weight:400;}
-  input:checked+label p{color:$neutral-900;font-weight:700;} // 等同 .fw-7
+  input {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+  }
+  input + label p {
+    transition: color 0.2s, font-weight 0.2s;
+  }
+  input:not(:checked) + label p {
+    color: $neutral-700;
+    font-weight: 400;
+  }
+  input:checked + label p {
+    color: $neutral-900;
+    font-weight: 700;
+  } // 等同 .fw-7
 }

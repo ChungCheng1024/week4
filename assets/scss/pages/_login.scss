@@ -40,3 +40,28 @@
         font-weight: 600;
   }
 }
+
+/* 預設隱藏內容 */
+.login-content,
+.register-content {
+  display: none;
+}
+
+/* 顯示對應內容 */
+#tab-login:checked ~ .tab-content .login-content {
+  display: block;
+}
+#tab-register:checked ~ .tab-content .register-content {
+  display: block;
+}
+
+/* 選中 tab 樣式 */
+#tab-login:checked ~ .tab-labels label[for="tab-login"],
+#tab-register:checked ~ .tab-labels label[for="tab-register"] {
+  border-bottom: 2px solid #000;
+}
+
+/* 可點擊效果 */
+.tab-labels label {
+  cursor: pointer;
+}

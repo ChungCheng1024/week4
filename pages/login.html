@@ -1,50 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>登入頁</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>登入頁</title>
+  <!-- 主要樣式 -->
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <!-- 登入頁專屬樣式 -->
+  <link rel="stylesheet" href="../assets/css/login.css">
 </head>
 <body>
-    <%- include('./layout/header'); -%>
-    <div class="container py-16 py-md-0">
-        <div class="row flex-wrap">
-            <div class="col-5  col-md-4 ">
-                <img class="d-md-none"  src="../assets/img/login.png" alt="">
-                <img class="d-none d-md-block"  src="../assets/img/login-sm.png" alt="">
+  <%- include('./layout/header'); -%>
+
+  <div class="container py-16 py-md-0">
+    <div class="row flex-wrap">
+      <!-- 左邊圖片 -->
+      <div class="col-5 col-md-4">
+        <img class="d-md-none" src="../assets/img/login.png" alt="login">
+        <img class="d-none d-md-block" src="../assets/img/login-sm.png" alt="login-sm">
+      </div>
+
+      <!-- 右邊表單 -->
+      <div class="col-7 col-md-4">
+        <div class="login-form">
+          <h2 class="mb-8 mb-md-6 h3 h4-md text-center">歡迎！</h2>
+
+          <!-- radio -->
+          <input type="radio" id="tab-login" name="auth" checked hidden>
+          <input type="radio" id="tab-register" name="auth" hidden>
+
+          <!-- tabs -->
+          <div class="tab-labels reg-login mb-8 mb-md-6 d-flex">
+            <label for="tab-login" class="w50p py-3 h6 text-center cursor-pointer">登入</label>
+            <label for="tab-register" class="w50p py-3 h6 text-center cursor-pointer">註冊</label>
+          </div>
+
+          <!-- tab 內容 -->
+          <div class="tab-content">
+            <!-- 登入 -->
+            <div class="login-content">
+              <ul>
+                <li class="mb-2 border-radius-4 border-md-n300 bg-color-n0">
+                  <a class="d-flex align-items-center" href="#">
+                    <img class="d-block m-3" src="../assets/img/facebook.svg" alt="">
+                    <p class="title-md-p">Facebook 登入</p>
+                  </a>
+                </li>
+                <li class="mb-2 border-radius-4 border-md-n300 bg-color-n0">
+                  <a class="d-flex align-items-center" href="#">
+                    <img class="d-block m-3" src="../assets/img/apple.svg" alt="">
+                    <p class="title-md-p">Apple 登入</p>
+                  </a>
+                </li>
+                <li class="mb-2 border-radius-4 border-md-n300 bg-color-n0">
+                  <a class="d-flex align-items-center" href="#">
+                    <img class="d-block m-3" src="../assets/img/google.svg" alt="">
+                    <p class="title-md-p">Google 登入</p>
+                  </a>
+                </li>
+              </ul>
             </div>
-            <div class="col-7 col-md-4 ">
-                <div class="login-form">
-                    <h2 class="mb-8 mb-md-6 h3 h4-md text-center">歡迎！</h2>
-                    <ul class="reg-login mb-8 mb-md-6 d-flex">
-                        <li class="w50p"><button class="py-3 h6 text-center">登入</button></li>
-                        <li class="w50p"><button class="py-3 h6 text-center">註冊</button></li>
-                    </ul>
-                    <ul>
-                        <li class="mb-2 border-radius-4 border-md-n300 bg-color-n0">
-                            <a class="d-flex align-items-center" href="#">
-                                <img class="d-block m-3" src="/assets/img/facebook.svg" alt="">
-                                <p class="title-md-p">Facebook 登入</p>
-                            </a>
-                        </li>
-                        <li class="mb-2 border-radius-4 border-md-n300 bg-color-n0">
-                            <a class="d-flex align-items-center " href="#">
-                                <img class="d-block m-3" src="/assets/img/apple.svg" alt="">
-                                <p class="title-md-p">Apple 登入</p>
-                            </a>
-                        </li>
-                        <li class="mb-2 border-radius-4 border-md-n300 bg-color-n0">
-                            <a class="d-flex align-items-center " href="#">
-                                <img class="d-block m-3" src="/assets/img/google.svg" alt="">
-                                <p class="title-md-p">Google 登入</p>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+
+            <!-- 註冊 -->
+            <div class="register-content">
+              <ul>
+                <li class="mb-2 border-radius-4 border-md-n300 bg-color-n0">
+                  <a class="d-flex align-items-center" href="#">
+                    <img class="d-block m-3" src="../assets/img/facebook.svg" alt="">
+                    <p class="title-md-p">Facebook 註冊</p>
+                  </a>
+                </li>
+                <li class="mb-2 border-radius-4 border-md-n300 bg-color-n0">
+                  <a class="d-flex align-items-center" href="#">
+                    <img class="d-block m-3" src="../assets/img/apple.svg" alt="">
+                    <p class="title-md-p">Apple 註冊</p>
+                  </a>
+                </li>
+                <li class="mb-2 border-radius-4 border-md-n300 bg-color-n0">
+                  <a class="d-flex align-items-center" href="#">
+                    <img class="d-block m-3" src="../assets/img/google.svg" alt="">
+                    <p class="title-md-p">Google 註冊</p>
+                  </a>
+                </li>
+              </ul>
             </div>
+          </div>
+
         </div>
+      </div>
     </div>
-    <%- include('./layout/footer'); -%>
-    <script type="module" src="../main.js"></script>
+  </div>
+
+  <%- include('./layout/footer'); -%>
+  <script type="module" src="../main.js"></script>
 </body>
 </html>

@@ -163,6 +163,10 @@
 .flex-direct-col {
   flex-direction: column;
 }
+.text-decoration-underline{
+  text-decoration: underline;
+  text-underline-offset: 7px;  /* 底線與文字距離 */
+}
 .justify-content-center {
   justify-content: center;
 }
@@ -213,6 +217,9 @@
 }
 .pb-21 {
   padding-bottom: 84px;
+}
+.pb-1{
+  padding-bottom: 4px;
 }
 .pb-12 {
   padding-bottom: 48px;

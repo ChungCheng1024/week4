@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Montserrat:wght@100..900&display=swap");
 
 // 1. Base
 @import "./base/variables";
@@ -26,5 +26,5 @@
 @import "./pages/index";
 @import "./pages/login";
 @import "./pages/like";
-//響應式放最後面
+// 5. 響應式放最後面
 @import "./base/utilities";

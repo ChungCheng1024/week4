@@ -65,3 +65,14 @@
 .tab-labels label {
   cursor: pointer;
 }
+
+
+
+
+
+.color-group {
+  input{position:absolute;opacity:0;pointer-events:none;}
+  input + label p{transition:color .2s,font-weight .2s;}
+  input:not(:checked)+label p{color:$neutral-700;font-weight:400;}
+  input:checked+label p{color:$neutral-900;font-weight:700;} // 等同 .fw-7
+}
